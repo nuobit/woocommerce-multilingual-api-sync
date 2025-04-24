@@ -1,29 +1,26 @@
 # WooCommerce Multilingual API Sync
 
-**Version:** 1.0.0  
+**Version:** 1.0.1  
 **Author:** NuoBiT Solutions, S.L.  
 **License:** GPLv3 or later  
 
 ## Description
 
-This plugin disables WooCommerce product synchronization via REST API hooks to ensure only the data explicitly sent through the API is processed. It removes the `insert` in `woocommerce_rest_insert_product_object` action, streamlining product management for API-driven workflows.
+WooCommerce Multilingual API Sync ensures seamless integration between the WooCommerce REST API and WooCommerce Multilingual.
 
 ## Core Functionality
 
-- **Prevents Automatic Synchronization:** Disables product synchronization and related actions in WooCommerce to avoid interference with API-driven operations.
-- **Focus on API-Provided Data:** Ensures only the product data sent explicitly via the API is processed, preventing unintended updates or conflicts.
-- **Simplified Customization:** Offers a straightforward solution for managing WooCommerce REST API behavior without altering core files.
+- **Translatable Attributes**: Automatically marks product attributes added via WooCommerce REST API as translatable in WooCommerce Multilingual.
+- **Product Synchronization Control**: Disables product synchronization hooks in WooCommerce Multilingual to ensure only data sent through the REST API is processed.
 
 ## Use Cases
 
-- **API-Driven Product Management:** Ideal for scenarios where products are managed entirely through external systems using WooCommerce's REST API.
-- **Multilingual WooCommerce Stores:** Suitable for stores requiring precise control over product updates in a multilingual context, ensuring no unnecessary synchronizations occur.
-- **Custom Workflow Implementation:** Provides a clean slate for developers to implement their own product handling logic without interference from default WooCommerce behaviors.
+- Adding product attributes via WooCommerce REST API and ensuring they are immediately ready for translation in WooCommerce Multilingual.
+- Preventing automatic synchronization issues by precisely controlling the data synchronization flow when using WooCommerce REST API.
 
 ## Requirements
 
-- **WooCommerce**: Required for REST API functionality.  
-- **WooCommerce Multilingual (optional)**: Recommended for multilingual support but not required.
+- **WooCommerce Multilingual**: Required for REST API functionality.
 
 ## Installation
 
@@ -34,13 +31,11 @@ This plugin disables WooCommerce product synchronization via REST API hooks to e
 
 ## Usage
 
-Once activated, this plugin will:
+After installation and activation:
 
-- Disable the `insert` in `woocommerce_rest_insert_product_object` action.
-- Prevent WooCommerce from automatically synchronizing products during REST API operations.
-- Allow developers to define custom behavior for managing product data.
-
-No additional setup is required after activation.
+- Product attributes added via the WooCommerce REST API are automatically set as translatable.
+- Product synchronization hooks are automatically disabled, ensuring that only REST API data is processed.
+- No additional settings or user interactions are required. The plugin operates automatically once activated.
 
 ## GitHub Repository
 
