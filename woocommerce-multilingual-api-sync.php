@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WooCommerce Multilingual API Sync
  * Description: Manages pending synchronization processes in WooCommerce Multilingual.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: NuoBiT Solutions S.L.
  * Author URI: https://www.nuobit.com
  */
