@@ -1,6 +1,6 @@
 # WooCommerce Multilingual API Sync
 
-**Version:** 1.0.1  
+**Version:** 1.0.2  
 **Author:** NuoBiT Solutions, S.L.  
 **License:** GPLv3 or later  
 
@@ -11,7 +11,7 @@ WooCommerce Multilingual API Sync ensures seamless integration between the WooCo
 ## Core Functionality
 
 - **Translatable Attributes**: Automatically marks product attributes added via WooCommerce REST API as translatable in WooCommerce Multilingual.
-- **Product Synchronization Control**: Disables product synchronization hooks in WooCommerce Multilingual to ensure only data sent through the REST API is processed.
+- **Product Synchronization Control**: Disables the automatic synchronization of products and variations in WooCommerce Multilingual and enforces the link between products and variations through the translation_of parameter.
 
 ## Use Cases
 
