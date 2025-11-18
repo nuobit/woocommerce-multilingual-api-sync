@@ -11,7 +11,7 @@ function init() {
 	$inc_path = __DIR__ . '/';
 	$files = [
 		'wc-rest-product-attribute-controller-sync.php',
-		'wc-rest-product-controller-sync.php',
+		//'wc-rest-product-controller-sync.php',
 	];
 
 	foreach ( $files as $file ) {
